@@ -41,7 +41,7 @@ the background URL is incorrect, then reload. You'll see that a test case just b
 The assumption is that you're using a setup similar to I am. That is,
 you're using Mocha for your tests and that you're running your actual
 application in an `<iframe>`. My setup with the tests and all
-is in the file [test.js]((https://github.com/raimohanska/larry-wall/blob/master/test/test.js). 
+is in the file [test.js](https://github.com/raimohanska/larry-wall/blob/master/test/test.js). 
 
 Here's the thing you don't want to hear. You have to add some extra code
 to your actual application. That is, you need to include the
@@ -60,7 +60,7 @@ right?
 
 For your Mocha tests, you can define a helper function `checkAllImages`
 that will generate a test case that checks that all images are valid in
-the application iframe. I've defined mine in [test.js]((https://github.com/raimohanska/larry-wall/blob/master/test/test.js).
+the application iframe. I've defined mine in [test.js](https://github.com/raimohanska/larry-wall/blob/master/test/test.js).
 
 ### 3. Call the helper in releavant test cases
 
