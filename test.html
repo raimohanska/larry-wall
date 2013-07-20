@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TESTRUNNER backbone-gcl</title>
+    <link rel="stylesheet" href="components/mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script type="text/javascript" src="components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="components/mocha/mocha.js"></script>
+    <script type="text/javascript" src="components/chai/chai.js"></script>
+    <script type="text/javascript" src="components/chai-jquery/chai-jquery.js"></script>
+    <script type="text/javascript">
+      mocha.setup('bdd')
+    </script>
+    <script src="components/requirejs/require.js" data-main="test.js"></script>
+  </body>
+</html>
