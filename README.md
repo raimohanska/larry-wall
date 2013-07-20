@@ -12,6 +12,8 @@ Now I can write tests like this:
 
 ```js
   describe("The front page", function() {
+    before(loadFrontPage)
+    
     it ('Shows a cool image', function() {
       expect(page.find("img.cool")).to.be.visible()
     })
