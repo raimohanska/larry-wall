@@ -29,7 +29,9 @@ And get test reports like this:
 The `checkAllImages` call there generates a test case that check that all `<img>` tags are successfully loaded. 
 It also verifies my CSS backgrounds!
 
-To run my example (OSX specific, assumes you've got Bower installed):
+## The example application
+
+To run my example on OSX, you need to install Bower, then clone this repo the cd into it and then
 
     bower install
     ./serve
@@ -39,6 +41,8 @@ Now that you've got the tests running in your browser, you might as well try to 
 the background URL is incorrect, then reload. You'll see that a test case just broke.
 
 ## Steps to success
+
+Here's how to do it for your application.
 
 ### 1. Add nasty stuff to your application
 
