@@ -16,7 +16,7 @@ wait = {
 function openPage(path) {
   return function(done) {
     var sutFrame = $("<iframe>").attr("src", "../" + path).attr("id", "sut")
-    $("body").append(sutFrame)
+    $("body").remove("#sut").append(sutFrame)
     wait.until(function() {
       return sutWindow().$
     }, done)
