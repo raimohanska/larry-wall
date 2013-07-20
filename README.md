@@ -72,5 +72,9 @@ the application iframe. I've defined mine in [test.js](https://github.com/raimoh
 
 ### 3. Call the helper in relevant test cases
 
-Like this.
+Like in [test.js](https://github.com/raimohanska/larry-wall/blob/master/test/test.js).
+
+### 4. Profit
+
+No more broken images in production. You win.
 
