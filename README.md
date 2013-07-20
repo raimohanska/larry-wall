@@ -24,7 +24,7 @@ describe("Front page", function() {
 
 And get test reports like this:
 
-![mocha-report](https://github.com/raimohanska/larry-wall/blob/master/mocha-screenshot.png)
+![mocha-report](https://raw.github.com/raimohanska/larry-wall/master/mocha-screenshot.png)
 
 The `checkAllImages` call there generates a test case that check that all `<img>` tags are successfully loaded. 
 It also verifies my CSS backgrounds!
