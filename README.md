@@ -25,11 +25,11 @@ Now I can write tests like this:
 The `checkAllImages` call there generates a test case that check that all `<img>` tags are successfully loaded. 
 It also verifies my CSS backgrounds!
 
-To run my example (OSX specific):
+To run my example (OSX specific, assumes you've got Bower installed):
 
     bower install
     ./serve
-    open http://localhost:8000/test.html
+    open http://localhost:8000/test/
 
 Now that you've got the tests running in your browser, you might as well try to break them. So, edit `index.css` so that
 the background URL is incorrect, then reload. You'll see that a test case just broke.
