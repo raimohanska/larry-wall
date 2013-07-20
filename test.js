@@ -1,6 +1,6 @@
+// Test framework setup
+
 var expect = chai.expect
-var sutFrame = $("<iframe>").attr("src", "index.html").attr("id", "sut")
-$("body").append(sutFrame)
 sutWindow = function() { return $("#sut")[0].contentWindow }
 S = function(selector) { return sutWindow().$(selector) }
 wait = {
@@ -13,8 +13,17 @@ wait = {
     }
   }
 }
+function openPage(path) {
+  return function(done) {
+    var sutFrame = $("<iframe>").attr("src", path).attr("id", "sut")
+    $("body").append(sutFrame)
+    wait.until(function() {
+      return sutWindow().$
+    }, done)
+  }
+}
 function checkAllImages() {
-  describe('Images', function() {
+  describe('Images and backgrounds', function() {
     var brokenImages
     before(function(done) {
       sutWindow().findBrokenImages(function(failed) {
@@ -28,16 +37,19 @@ function checkAllImages() {
   })
 }
 
-describe("Always", function() {
-  before(function(done) {
-    wait.until(function() {
-      return sutWindow().$
-    }, done)
-  })
+// Actual tests cases
+
+describe("Front page", function() {
+  before(openPage("index.html"))
+
   it ('Shows image of Larry Wall', function() {
     expect(S("img")).to.be.visible()
   })
 
   checkAllImages()
 })
+
+
+// Run 'em
+
 mocha.run()
