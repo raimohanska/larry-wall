@@ -3,12 +3,6 @@
 A simple(ish) example application with [Mocha](http://visionmedia.github.io/mocha/) test case that finds all broken images on page
 using the [jQuery.waitforimages](https://github.com/alexanderdickson/waitForImages) plugin.
 
-To run (OSX specific):
-
-    bower install
-    ./serve
-    open http://localhost:8000/test.html
-
 So, have *you* ever found out that there's a broken image on your web application? 
 Maybe on a page that is seldom visited by developers. You've got great mocha
 tests for your UI features, but none of these can catch broken images? I was
@@ -29,4 +23,11 @@ Now I can write tests like this:
 The `checkAllImages` call there generates a test case that check that all `<img>` tags are successfully loaded. 
 It also verifies my CSS backgrounds!
 
-TODO: more complete description...
+To run my example (OSX specific):
+
+    bower install
+    ./serve
+    open http://localhost:8000/test.html
+
+Now that you've got the tests running in your browser, you might as well try to break them. So, edit `index.css` so that
+the background URL is incorrect, then reload. You'll see that a test case just broke.
