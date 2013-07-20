@@ -10,17 +10,21 @@ in this situation a while ago. No more!
 
 Now I can write tests like this:
 
-```js
-  describe("The front page", function() {
-    before(loadFrontPage)
-    
-    it ('Shows a cool image', function() {
-      expect(page.find("img.cool")).to.be.visible()
-    })
+```javascript
+describe("Front page", function() {
+  before(openPage("index.html"))
 
-    checkAllImages()
+  it ('Shows image of Larry Wall', function() {
+    expect(S("img")).to.be.visible()
   })
+
+  checkAllImages()
+})
 ```
+
+And get test reports like this:
+
+![mocha-report](https://github.com/raimohanska/larry-wall/blob/master/mocha-screenshot.png)
 
 The `checkAllImages` call there generates a test case that check that all `<img>` tags are successfully loaded. 
 It also verifies my CSS backgrounds!
@@ -62,18 +66,7 @@ For your Mocha tests, you can define a helper function `checkAllImages`
 that will generate a test case that checks that all images are valid in
 the application iframe. I've defined mine in [test.js](https://github.com/raimohanska/larry-wall/blob/master/test/test.js).
 
-### 3. Call the helper in releavant test cases
+### 3. Call the helper in relevant test cases
 
 Like this.
 
-```javascript
-describe("Front page", function() {
-  before(openPage("index.html"))
-
-  it ('Shows image of Larry Wall', function() {
-    expect(S("img")).to.be.visible()
-  })
-
-  checkAllImages()
-})
-```
