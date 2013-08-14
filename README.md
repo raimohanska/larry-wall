@@ -31,7 +31,7 @@ It also verifies my CSS backgrounds!
 
 ## The example application
 
-To run my example on OSX, you need to install Bower, then clone this repo the cd into it and then
+To run my example on OSX, you need to install Bower, clone this repo, cd into it and then
 
     bower install
     ./serve
