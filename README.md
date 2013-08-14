@@ -1,4 +1,4 @@
-## Larry Wall
+## Don't Live With Broken Images
 
 A simple(ish) example application with [Mocha](http://visionmedia.github.io/mocha/) test case that finds all broken images on page
 using the [jQuery.waitforimages](https://github.com/alexanderdickson/waitForImages) plugin.
@@ -46,7 +46,7 @@ Here's how to do it for your application.
 
 ### 1. Add nasty stuff to your application
 
-The assumption is that you're using a setup similar to I am. That is,
+The assumption is that you're using a setup similar to mine. That is,
 you're using Mocha for your tests and that you're running your actual
 application in an `<iframe>`. My setup with the tests and all
 is in the file [test.js](https://github.com/raimohanska/larry-wall/blob/master/test/test.js). 
