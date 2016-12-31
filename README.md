@@ -1,6 +1,6 @@
 ## Don't Live With Broken Images
 
-This is a simple example application with a [Mocha](http://visionmedia.github.io/mocha/) test that finds all broken images on a page
+This is a simple example application with a [Mocha](http://mochajs.org/) test that finds all broken images on a page
 using the [jQuery.waitforimages](https://github.com/alexanderdickson/waitForImages) plugin.
 
 So, have *you* ever found out that there's a broken image on your web application? 
